@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container-fluid">
+            <!--Anrede-->
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-12">
+                    <p>Anrede: </p>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-6">
+                    <label>
+                        <input type="radio" name="anrede"> Herr
+                    </label>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-6">
+                    <label>
+                        <input type="radio" name="anrede"> Frau
+                    </label>
+                </div>
+            </div>
+            
+            <!--Vorname-->
+            <div class="row">
+                <div class="col-md-2">
+                    <p>Vorname: </p>
+                </div>
+                <div class="col-md-10">
+                    <input type="text" name="vorname" placeholder="Max" autofocus>
+                </div>
+            </div>
+
+            <!--Nachname-->
+            <div class="row">
+                <div class="col-md-2">
+                    <p>Name: </p>
+                </div>
+                <div class="col-md-10">
+                    <input type="text" name="nachname" placeholder="Muster">
+                </div>
+            </div>
+
+            <!--Datum-->
+            <div class="row">
+                <div class="col-md-2">
+                    <p>Datum: </p>
+                </div>
+                <div class="col-md-10">
+                    <input type="date" name="datum">
+                </div>
+            </div>
+
+            <!--Strasse-->
+            <div class="row">
+                <div class="col-md-2">
+                    <p>Strasse: </p>
+                </div>
+                <div class="col-md-10">
+                    <input type="text" name="strasse" placeholder="Musterstrasse 12">
+                </div>
+            </div>
+
+            <!--PLZ-->
+            <div class="row">
+                <div class="col-md-2">
+                    <p>PLZ: </p>
+                </div>
+                <div class="col-md-3">
+                    <input type="number" name="plz" placeholder="8320">
+                </div>
+                <div class="col-md-3">
+                    <p>Ort: </p>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" name="ort" placeholder="Fehraltdorf">
+                </div>
+            </div>
+
+            <!--Land-->
+            <div class="row">
+                <div class="col-md-2">
+                    <p>Land: </p>
+                </div>
+                <div class="col-md-10">
+                    <select name="land">
+                        <optgroup label="Europa">
+                            <option value="de">Deutschland</option>
+                            <option value="ch" selected>Schweiz</option>
+                            <option value="au">Österreich</option>
+                            <option value="fr">Frankreich</option>
+                            <option value="it">Italien</option>
+                            <option value="sp">Spanien</option>
+                            <option value="uk">England</option>
+                            <option value="be">Belgien</option>
+                            <option value="po">Polen</option>
+                        </optgroup>
+                        <optgroup label="Nordamerika">
+                            <option value="usa">USA</option>
+                            <option value="can">Kanada</option>
+                            <option value="mex">Mexiko</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
